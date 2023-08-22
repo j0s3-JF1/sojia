@@ -1,0 +1,158 @@
+/*
+    Agricultura Sustentavel
+*/
+
+.banner3 {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.banner3 img {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2AB7E6;
+}
+
+.ods2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.ods2 h1 {
+    color: #2AB7E6;
+    text-align: center;
+    font-size: 40px;
+}
+
+.ods2 p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+    color: #999;
+}
+
+.objetivos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.objetivos .obj1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+
+.objetivos .obj1 .box1 {
+    width: 50%;
+    height: 130px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #4ABF59;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.box1 p {
+    margin-right: 30px;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.objetivos .obj1 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-right: 600px;
+    font-size: 80px;
+}
+
+.objetivos .obj2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+
+.objetivos .obj2 .box1 {
+    width: 50%;
+    height: 130px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #4ABF59;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.obj2 .box1 p {
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.objetivos .obj2 h1 {
+    font-weight: bold;
+    margin-left: 600px;
+    font-size: 80px;
+}
+
+.subBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: fixed;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.subBanner img {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+}
+
+.subBanner .message{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 700px;
+}
+
+.subBanner .message h2{
+    position: absolute;
+    color: #2AB7E6;
+    margin-bottom: 250px;
+    text-align: left;
+    font-size: 40px;
+}
+
+.subBanner .message p{
+    position: absolute;
+    text-align: left;
+    font-size: 24px;
+    color: #999;
+    margin-top: 75px;
+}

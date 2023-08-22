@@ -1,0 +1,105 @@
+/*
+    Fome.html
+*/
+
+.banner-fome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.banner-fome .esfera{
+    width: 50%;
+}
+
+.banner-fome h1{
+    color: white;
+    position: absolute;
+    margin-top: -288px;
+    margin-left: 220px;
+    font-size: 35px;
+}
+
+.banner-fome .esfera img{
+    width: 50%;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.banner-fome .mapa{
+    width: 50%;
+}
+
+.banner-fome .mapa img{
+    width: 80%;
+}
+
+.conteudo-fome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.conteudo-fome h1{
+    color: #2AB7E6;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.conteudoFome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.conteudoFome .paragrafo{
+    width: 50%;
+    height: 150px;
+    background-color: #4ABF59;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudoFome .paragrafo p{
+    margin-left: 295px;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 17px;
+}
+
+.conteudoFome2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.conteudoFome2 .paragrafo{
+    width: 50%;
+    height: 150px;
+    background-color: #4ABF59;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudoFome2 .paragrafo p{
+    margin-left: 50px;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 17px;
+}

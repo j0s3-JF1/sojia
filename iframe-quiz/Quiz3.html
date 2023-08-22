@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quizzes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+        <style>
+            button {
+                cursor: pointer;
+            }
+
+            .quiz {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
+            }
+
+            .questions-container {
+                width: 745px;
+                height: 220px;
+                padding: 16px;
+                border: 3px solid #ffdd92;
+                border-radius: 20px;
+                box-shadow: 0 2px 2px;
+
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .question {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: "Roboto Condensed";
+            }
+
+            .answers-container {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .button {
+                background-color: #4abf59;
+                color: #fff;
+                font-size: 16px;
+                border: 0;
+                border-radius: 6px;
+                height: 48px;
+                transition: filter 0.2s;
+            }
+
+            .button:hover {
+                filter: brightness(0.8);
+            }
+
+            .correct {
+                background-color: #fff;
+                border: 1px solid #4abf59;
+                color: #4abf59;
+            }
+
+            .incorrect {
+                background-color: red;
+                color: #000;
+            }
+
+            .tamanho-quiz34{
+                height: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="quiz">
+            <div class="questions-container">
+                <span class="question">1. Qual o nome completo da ODS 2?</span>
+                <div class="answers-container">
+                    <button class="answer button">Objetivo de Desenvolvimento Sustentável 2</button>
+                    <button class="answer button">Fome Zero e Agricultura Sustentável</button>
+                    <button class="answer button">Erradiação da Fome e Pobreza</button>
+                    <button class="answer button">Sustentabilidade Alimentar Global</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <div class="questions-container">
+                <span class="question">2. Qual o objetivo principal da ODS 2?</span>
+                <div class="answers-container">
+                    <button class="answer button">Acabar com a fome em todo o mundo</button>
+                    <button class="answer button">Promover a igual de gênero na agricultura</button>
+                    <button class="answer button">Alcançar a segurança cibernética global</button>
+                    <button class="answer button">Construir infraestruturas resilientes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <div class="questions-container">
+                <span class="question">3. O que significa agricultura sustentável?</span>
+                <div class="answers-container">
+                    <button class="answer button tamanho-quiz34">Um sistema de produção agrícola que atende às necessidades presentes sem comprometer as futuras gerações</button>
+                    <button class="answer button tamanho-quiz34">Uma técnica agrícola que utiliza apenas produtos químicos para aumentar a produtividade</button>
+                    <button class="answer button tamanho-quiz34">Uma abordagem agrícola que visa maximizar os lucros dos agricultores sem se preocupar com o meio ambiente</button>
+                    <button class="answer button tamanho-quiz34">Uma prática agrícola que visa o desenvolvimento urbano sustentável</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <div class="questions-container">
+                <span class="question">4. Por que a agricultura sustentável é importante?</span>
+                <div class="answers-container">
+                    <button class="answer button tamanho-quiz34">Porque contribui para a urbanização descontrolada</button>
+                    <button class="answer button tamanho-quiz34">Porque aumenta os lucros dos agricultores, mesmo que seja prejudicial ao meio ambiente</button>
+                    <button class="answer button tamanho-quiz34">Porque é uma tendência da moda na indústria alimentícia</button>
+                    <button class="answer button tamanho-quiz34">Porque ajuda a conservar recursos naturais, promover a biodiversidade e garantir a segurança alimentar a longo prazo</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const quizzes = document.querySelectorAll('.quiz');
+    let incorrectCount = 0;
+
+    function handleQuiz(selectedAnswer, correctAnswer) {
+      if (selectedAnswer === correctAnswer) {
+        const answers = Array.from(selectedAnswer.parentElement.children);
+        answers.forEach(answer => {
+          if (answer !== correctAnswer) {
+            answer.classList.add('incorrect');
+          }
+        });
+        correctAnswer.classList.add('correct');
+      } else {
+        selectedAnswer.classList.add('incorrect');
+        incorrectCount++;
+
+        if (incorrectCount === 16) {
+          const answers = Array.from(selectedAnswer.parentElement.children);
+          answers.forEach(answer => {
+            if (answer !== correctAnswer) {
+              answer.classList.remove('incorrect');
+            }
+          });
+          correctAnswer.classList.add('correct');
+        }
+      }
+    }
+
+    quizzes.forEach(quiz => {
+      const answers = quiz.querySelectorAll('.answer');
+      const correctAnswer = answers[quiz === quizzes[0] ? 1 : (quiz === quizzes[1] ? 0 : (quiz === quizzes[2] ? 0 : 3))];
+
+      answers.forEach(answer => {
+        answer.addEventListener('click', function() {
+          handleQuiz(this, correctAnswer);
+        });
+      });
+    });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,284 @@
+/*
+    Problematica.html
+*/
+.banner4{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner4 img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner4 .info-banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 25%;
+    margin-right: 100px;
+}
+
+.banner4 .info-banner img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.banner4 .info-banner h1{
+    color: #2AB7E6;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 15%;
+    font-size: 40pt;
+}
+
+.conteudo-problematica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 41px;
+}
+
+.conteudo-problematica h2{
+    font-weight: 700;
+    font-size: 47px;
+    width: 444px;
+    height: 55px;
+    color: #2AB7E6;
+}
+
+.conteudo-problematica3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.conteudo-problematica3 h4{
+    text-align: center;
+    width: 890px;
+    height: 87px;
+    color: #999;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#conteudo-uniao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 41px;
+}
+
+.conteudo-uniao{
+    color: #999;
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+.conteudo-uniao h3{
+    left: 149px;
+    width: 628px;
+    height: 229px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+.img-uniao{
+    right: 149px;
+}
+
+.box-uniao-container{
+    margin-top: 41px;
+    margin-bottom: 41px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+}
+
+.box-uniao{
+    box-sizing: border-box;
+    width: 935px;
+    height: 80px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.box-uniao h3{
+    font-family: 'Roboto Condensed';
+    font-weight: unset;
+    font-style: normal;
+    font-size: 28px;
+    color: #999;
+}
+
+.conteudo-uniao2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 149px;
+}
+
+.conteudo-uniao2 h3{
+    font-size: 20px;
+    color: #999;
+}
+
+.conteudo-uniao{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 50px 149px 60px 149px;
+}
+
+.conteudo-uniao-ia{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.conteudo-uniao-ia hr{
+    border: none;
+    width: 50px;
+    height: 3px;
+    background-color: #FFDD92;
+}
+
+.conteudo-uniao-ia h2{
+    text-align: right;
+    font-size: 48px;
+    width: 309px;
+    height: 112px;
+    color: #2AB7E6;
+}
+
+.conteudo-uniao-ia h3{
+    text-align: end;
+    width: 628px;
+    height: 266px;
+    font-size: 24px;
+}
+
+.conteudo-problematica2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2AB7E6;
+}
+
+.conteudo-problematica2 h2{
+    width: 665px;
+    height: 112px;
+    font-size: 48px;
+    text-align: center;    
+}
+
+.conteudo-problematica4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #999;
+}
+
+.conteudo-problematica4 h3{
+    text-align: center;
+    width: 1170px;
+    height: 346px;
+    font-size: 28px;
+}
+
+.proj-agro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 147px 0px 149px;
+}
+
+.proj-agro-conteudo{
+    text-align: left;
+}
+
+.proj-agro-conteudo hr{
+    border: none;
+    width: 50px;
+    height: 3px;
+    background-color: #FFDD92;
+    margin-bottom: 24px;
+}
+
+.proj-agro-conteudo h3{
+    text-align: left;
+    width: 287px;
+    font-size: 32px;
+    color: #2AB7E6;
+}
+
+.proj-agro-conteudo h2{
+    text-align: left;
+    font-size: 65px;
+    color: #2AB7E6;
+}
+
+.proj-agro-conteudo h4{
+    text-align: left;
+    font-size: 24px;
+    color: #999;
+    width: 500px;
+}
+
+#img-arvore{
+    width: 370px;
+    height: 535px;
+}
+
+.conteudo-problematica{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+
+.conteudo-problematica-botoes{
+    display: flex;
+    gap: 24px;
+}
+
+.conteudo-problematica button {
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    color: white;
+    background-color: #4ABF59;
+    border: none;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.conteudo-problematica button:hover {
+    background-color: white;
+    color: #4ABF59;
+    border: 1px solid #4ABF59;
+}

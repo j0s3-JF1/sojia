@@ -1,0 +1,191 @@
+/*
+    Inseguranca.html
+*/
+
+.banner2 .conteudo{
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 155px;
+    font-size: 23px;
+}
+ 
+.banner2 .conteudo h1 {
+    color: #2AB7E6;
+    font-weight: bold;
+    text-align: left;
+}
+
+.banner2 p {
+    margin-top: 25px;
+    color: #fff;
+    font-weight: 100;
+    text-align: left;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 798px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2AB7E6;
+}
+
+.graficos1 {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.graficos1 h1 {
+    color: #2AB7E6;
+    font-size: 40px;
+}
+
+.graficos1 .dataGrafico1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.dataGrafico1 hr {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #FFDD92;
+}
+
+.dataGrafico1 h2 {
+    color: #2AB7E6;
+}
+
+.graficos2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.graficos2 h1 {
+    color: #2AB7E6;
+}
+
+.graficos2 .dataGrafico2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.dataGrafico2 hr {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #FFDD92;
+    margin-left: 180px;
+}
+
+.dataGrafico2 h2 {
+    text-align: right;
+    color: #2AB7E6;
+}
+
+.produtores1 {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.produtores1 img{
+    width: 50%;
+}
+
+.produtores1 label {
+    width: 50%;
+    padding: 0 68px;
+    color: #999;
+    font-size: 20px;
+    text-align: left;
+}
+
+.produtores2 {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.produtores2 img{
+    margin-right: 0;
+    margin-left: auto;
+    width: 50%;
+}
+
+.produtores2 label {
+    text-align: left;
+    width: 50%;
+    padding: 0 68px;
+    font-size: 20px;
+    color: #999;
+}
+
+.causas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.causas hr {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #FFDD92;
+}
+
+.causas h1 {
+    color: #2AB7E6;
+    text-align: center;
+    font-size: 40px;
+}
+
+.causas .causasConteudo1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.causasConteudo1 .conteudo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 90px;
+    border-radius: 20px;
+    background-color: #4ABF59;
+}
+
+.causasConteudo1 .conteudo1 p {
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+}

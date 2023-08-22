@@ -1,0 +1,263 @@
+/*
+    Reinicialização de pagina
+*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed';
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    Cabeçalho do Site
+*/
+
+.header {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 7%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 500px;
+    border-bottom: 1px solid #B7B7B7;
+}
+
+.header img {
+    width: 100px;
+    position: absolute;
+}
+
+.header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    margin-right: 90%;
+}
+
+.header button img {
+    width: 30px;
+}
+
+/*
+    Sidebar 
+*/
+
+/*Começo cabeçalho com menu responsivo*/
+#cabecalho {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #b7b7b7;
+    background-color: #fff;
+}
+
+.cabecalho {
+    margin: 0 136px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.button-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;    
+    z-index: 9;
+}
+
+.bar1,.bar2,.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #2AB7E6;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.logo {
+    align-items: normal;
+}
+
+.logo img {
+    width: 170px;
+    height: 54px;
+}
+
+.menu-class {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #2AB7E6;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+    z-index: 9;
+}
+
+.menu-class.open {
+    left: 0;
+}
+
+.lista-menu {
+    margin-top: 125px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.lista-menu a {
+    margin-bottom: 25px;
+    color: #2AB7E6;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+}
+
+.button-pag {    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    border-radius: 20px;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+}
+
+.button-pag:hover{
+    color: #4ABF59;
+}
+    
+.logo-menu{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-menu img{
+    width: 170px;
+    height: 54px;
+}    
+/*Fim cabeçalho com menu responsivo*/
+
+/*
+    CSS Iframe-Quiz
+*/
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 240px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.titulo hr {
+    width: 50px;
+    height: 3px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #FFDD92;
+}
+
+.titulo h1 {
+    font-family: 'Roboto Condensed';
+    color: #2AB7E6;
+}
+
+.quiz-iframe iframe {width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe1 {  
+    height: 580px;
+}
+
+.iframe2{
+    height: 880px;
+}
+
+.iframe3{
+    height: 1170px;
+}
+
+/*
+    botão prosseguir
+*/
+
+#button-prosseguir-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-prosseguir-container hr{
+    width: 50px;
+    height: 3px;
+    border: none;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background-color: #FFDD92;
+}
+
+.button-prosseguir{
+    height: 61px;
+    width: 328px;
+    border: 0;
+    font-size: 26px;
+    margin-bottom: 20px;
+
+    background: #4ABF59;
+    border-radius: 50px;
+    transition: filter 0.2s;
+}
+
+.button-prosseguir:hover{
+    filter: brightness(0.8);
+}
+
+.button-prosseguir a{
+    text-decoration: none;    
+    color: #fff;
+}
+
+a, button{
+    cursor: pointer;
+}
+

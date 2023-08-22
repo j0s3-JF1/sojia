@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quizzes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+        <style>
+
+            button {
+                cursor: pointer;
+            }
+
+            .quiz {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
+            }
+
+            .questions-container {
+                width: 745px;
+                height: 220px;
+                padding: 16px;
+                border: 3px solid #ffdd92;
+                border-radius: 20px;
+                box-shadow: 0 2px 2px;
+
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .question {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: "Roboto Condensed";
+            }
+
+            .answers-container {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .button {
+                background-color: #4abf59;
+                color: #fff;
+                font-size: 16px;
+                border: 0;
+                border-radius: 6px;
+                height: 48px;
+                transition: filter 0.2s;
+            }
+
+            .button:hover {
+                filter: brightness(0.8);
+            }
+
+            .correct {
+                background-color: #fff;
+                border: 1px solid #4abf59;
+                color: #4abf59;
+            }
+
+            .incorrect {
+                background-color: red;
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="quiz">
+            <div class="questions-container">
+                <span class="question">1. Quantas pessoas foram afetadas pela fome em 2021, de acordo com a FAO?</span>
+                <div class="answers-container">
+                    <button class="answer button">828 milhões</button>
+                    <button class="answer button">720 milhões</button>
+                    <button class="answer button">2,3 bilhões</button>
+                    <button class="answer button">811 milhões</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <div class="questions-container">
+                <span class="question">2. Quantas pessoas estavam em insegurança alimentar moderada ou grave em 2021?</span>
+                <div class="answers-container">
+                    <button class="answer button">2,1%</button>
+                    <button class="answer button">5,0%</button>
+                    <button class="answer button">3,9%</button>
+                    <button class="answer button">1,0%</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const quizzes = document.querySelectorAll(".quiz");
+            let incorrectCount = 0;
+
+            function handleQuiz(selectedAnswer, correctAnswer) {
+                if (selectedAnswer === correctAnswer) {
+                    const answers = Array.from(selectedAnswer.parentElement.children);
+                    answers.forEach((answer) => {
+                        if (answer !== correctAnswer) {
+                            answer.classList.add("incorrect");
+                        }
+                    });
+                    correctAnswer.classList.add("correct");
+                } else {
+                    selectedAnswer.classList.add("incorrect");
+                    incorrectCount++;
+
+                    if (incorrectCount === 8) {
+                        const answers = Array.from(selectedAnswer.parentElement.children);
+                        answers.forEach((answer) => {
+                            if (answer !== correctAnswer) {
+                                answer.classList.remove("incorrect");
+                            }
+                        });
+                        correctAnswer.classList.add("correct");
+                    }
+                }
+            }
+
+            quizzes.forEach((quiz) => {
+                const answers = quiz.querySelectorAll(".answer");
+                const correctAnswer = answers[quiz === quizzes[0] ? 0 : 2];
+
+                answers.forEach((answer) => {
+                    answer.addEventListener("click", function () {
+                        handleQuiz(this, correctAnswer);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
